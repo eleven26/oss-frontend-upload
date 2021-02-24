@@ -1,0 +1,36 @@
+{
+    "name": "eleven26/oss-frontend-upload",
+    "type": "library",
+    "license": "MIT",
+    "description": "阿里云oss前端上传",
+    "homepage": "https://github.com/eleven26/oss-frontend-upload",
+    "authors": [
+        {
+            "name": "baiguiren",
+            "email": "rubymay21s@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eleven26\\Oss\\": "src"
+        }
+    },
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Eleven26\\Oss\\OssFrontendUploadServiceProvider"
+            ]
+        }
+    }
+}
