@@ -6,6 +6,14 @@
 composer require eleven26/oss-frontend-upload
 ```
 
+## 使用
+
+Lumen 需要在 `bootstrap/app.php` 里面加上下面这一行，Laravel 不需要这一步：
+
+```
+$app->register(Eleven26\Oss\OssFrontendUploadServiceProvider::class);
+```
+
 ## 配置
 
 在 config 文件夹下面添加一个 oss-upload.php 文件，内容如下：
